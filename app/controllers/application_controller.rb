@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   def hello
    # render html: "hello, world!"
-   render "static_pages/about"
+   render "static_pages/home"
   end
 
   
