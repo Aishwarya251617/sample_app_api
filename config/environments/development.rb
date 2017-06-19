@@ -31,7 +31,7 @@ Rails.application.configure do
  
   config.action_mailer.delivery_method = :test
   config.action_mailer.delivery_method = :letter_opener
-  host = 'localhost:3001' #use your local dev host instead
+  host = 'localhost:3002' #use your local dev host instead
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
 
   config.action_mailer.perform_caching = false
