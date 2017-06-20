@@ -13,6 +13,7 @@ before_action :corrent_user,   only: [:edit, :update]
 
  def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
    # debugger
  end
 
@@ -58,13 +59,12 @@ before_action :corrent_user,   only: [:edit, :update]
     # Before filters
 
     # Confirms a logged-in user.
-  def logged_in_user
-      unless logged_in?
-        store_location
-        flash[:danger] = "Please log in."
-        redirect_to login_url
-      end
-  end
+  #def logged_in_user
+   #    store_location
+    #    flash[:danger] = "Please log in."
+     #   redirect_to login_url
+      #end
+  #end
 
     # Confirms the correct user.
   def corrent_user
