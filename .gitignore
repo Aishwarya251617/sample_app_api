@@ -18,11 +18,8 @@
 !/log/.keep
 !/tmp/.keep
 
-# Ignore Byebug command history file.
-.byebug_history
-
 # Ignore Spring files.
 /spring/*.pid
 
 # Ignore uploaded test images.
-/public/uploads
+/public/upload
