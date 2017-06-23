@@ -45,7 +45,9 @@ gem 'bootstrap-sass', '3.3.6'
 
 group :development, :test do
   # Call  anywhere in the code to stop execution and get a debugger console
-  gem 'sqlite3'
+  # gem 'sqlite3'
+  # gem 'mysql2'
+  gem 'pg', '0.18.4'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
@@ -61,6 +63,7 @@ group :development do
   gem 'letter_opener'
   gem "rails-erd"
   gem 'railroady'
+  gem 'byebug'
 end
 
 
